@@ -1,0 +1,9 @@
+rules:
+  - name: "WordPress"
+    matchers:
+      - type: regex
+        part: body
+        name: wordpress
+        group: 1
+        regex:
+          - '<meta name="generator" content="(WordPress (\d+\.\d+\.\d+))"'

@@ -1,0 +1,9 @@
+rules:
+  - name: "Apache"
+    matchers:
+      - type: regex
+        part: header
+        name: Apache
+        regex:
+          - "Server: .*?([aA]{1}pache[/]?[\\d\\.]*) ?"
+        group: 1

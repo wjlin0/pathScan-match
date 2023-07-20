@@ -1,0 +1,9 @@
+rules:
+  - name: "Microsoft-IIS"
+    matchers:
+      - type: regex
+        part: header
+        name: iis
+        group: 1
+        regex:
+          - "Server: .*?(Microsoft-IIS[/]?[\\d\\.]*)"

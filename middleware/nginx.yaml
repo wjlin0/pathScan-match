@@ -1,0 +1,9 @@
+rules:
+  - name: "Nginx"
+    matchers:
+      - type: regex
+        name: nginx
+        part: header
+        regex:
+          - "Server: .*?([nN]{1}ginx[/]?[\\d\\.]*) ?"
+        group: 1

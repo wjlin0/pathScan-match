@@ -1,0 +1,7 @@
+rules:
+  - name: "Thinkphp"
+    matchers:
+      - type: word
+        part: header
+        word:
+          - "ThinkPHP"

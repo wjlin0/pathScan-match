@@ -1,0 +1,9 @@
+rules:
+  - name: "Apisix"
+    matchers:
+      - type: regex
+        name: apisix
+        part: header
+        regex:
+          - 'Server: .*?((?i)APISIX/\d+(\.\d+)*) ?'
+        group: 1
