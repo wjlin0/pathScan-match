@@ -1,0 +1,7 @@
+rules:
+  - name: "泛微OA"
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - "Set-Cookie: ecology_JSessionid"

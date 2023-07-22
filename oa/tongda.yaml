@@ -1,0 +1,7 @@
+rules:
+  - name: "通达OA"
+    matchers:
+      - type: regex
+        part: body
+        regex:
+          - '<link rel="shortcut icon" href="/static/images/tongda.ico" />'

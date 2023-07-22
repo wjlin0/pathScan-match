@@ -1,0 +1,19 @@
+rules:
+  - name: "致远OA"
+    matchers:
+      - type: regex
+        part: body
+        name: "致远OA"
+        group: 1
+        regex:
+          - '<[tTiILlEe]{5}>.*?(致远A\d{1}\+协同管理软件 V\d+\.\d+[a-zA-Z]{2}\d+)</[tTiILlEe]{5}>'
+          - '<[tTiILlEe]{5}>.*?(致远A\d{1}-[a-zA-Z]{1}协同管理软件[企业版]?).*</[tTiILlEe]{5}>'
+          - '<[tTiILlEe]{5}>.*?(致远G\d{1}-[a-zA-Z]{1}协同管理软件 V\d+\.\d+).*</[tTiILlEe]{5}>'
+      - type: word
+        part: body
+        words:
+          - '<meta http-equiv="Refresh"content="0;url=/yyoa/index.jsp">'
+      - type: regex
+        part: header
+        regex:
+          - 'Location: https?://.*?/seeyon/index.jsp'

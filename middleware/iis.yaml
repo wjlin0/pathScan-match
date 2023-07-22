@@ -6,4 +6,5 @@ rules:
         name: iis
         group: 1
         regex:
-          - "Server: .*?(Microsoft-IIS[/]?[\\d\\.]*)"
+          - '(?i)Server: .*?(Microsoft-IIS[/]?[\d\.]*)'
+          - 'Server: .*?(Microsoft-HTTPAPI/\d+\.\d+).*?'

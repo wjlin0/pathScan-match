@@ -1,0 +1,15 @@
+rules:
+  - name: "Azure"
+    matchers:
+      - type: regex
+        part: header
+        name: azure
+        group: 1
+        regex:
+          - 'Server: .*?(Windows-Azure-Blob/\d+\.\d+).*?'
+  - name: "Azure-Key"
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '"Ocp-Apim-Subscription-Key":'
