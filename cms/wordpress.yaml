@@ -1,5 +1,5 @@
 rules:
-  - name: "WordPress"
+  - name: 'WordPress'
     matchers:
       - type: regex
         part: body

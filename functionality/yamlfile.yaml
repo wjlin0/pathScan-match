@@ -1,7 +1,0 @@
-rules:
-  - name: "YAML"
-    matchers:
-      - type: regex
-        part: header
-        regex:
-          - "Content-Type: application/yaml"

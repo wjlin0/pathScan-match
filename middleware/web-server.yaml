@@ -1,0 +1,34 @@
+rules:
+  - name: 'Apache'
+    matchers:
+      - type: regex
+        part: header
+        name: Apache
+        regex:
+          - '(?i)Server: .*?(apache[/\d\.]*).*?'
+        group: 1
+  - name: 'Nginx'
+    matchers:
+      - type: regex
+        name: nginx
+        part: header
+        regex:
+          - '(?i)Server: .*?(nginx[/\d\.]*).*?'
+        group: 1
+  - name: 'Tomcat'
+    matchers:
+      - type: regex
+        name: tomcat
+        part: body
+        regex:
+          - '(?i)(tomcat[/\d\.]+)'
+        group: 1
+  - name: 'Microsoft-IIS'
+    matchers:
+      - type: regex
+        part: header
+        name: iis
+        group: 1
+        regex:
+          - '(?i)Server: .*?(Microsoft-IIS[/\d\.]*)'
+          - 'Server: .*?(Microsoft-HTTPAPI[/\d\.]*).*?'

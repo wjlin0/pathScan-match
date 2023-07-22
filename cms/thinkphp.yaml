@@ -1,7 +1,7 @@
 rules:
-  - name: "Thinkphp"
+  - name: 'Thinkphp'
     matchers:
       - type: word
         part: header
         word:
-          - "ThinkPHP"
+          - 'ThinkPHP'

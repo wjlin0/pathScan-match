@@ -1,5 +1,5 @@
 rules:
-  - name: "通达OA"
+  - name: '通达OA'
     matchers:
       - type: regex
         part: body

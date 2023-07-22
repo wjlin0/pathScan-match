@@ -1,9 +1,0 @@
-rules:
-  - name: "Tomcat"
-    matchers:
-      - type: regex
-        name: tomcat
-        part: body
-        regex:
-          - "([Tt]{1}omcat[/]?[\\d\\.]*)"
-        group: 1

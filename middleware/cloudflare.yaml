@@ -1,0 +1,9 @@
+rules:
+  - name: 'cloudflare'
+    matchers:
+      - type: regex
+        part: header
+        name: cloudflare
+        group: 1
+        regex:
+          - '(?i)Server: .*?(cloudflare[/\d\.]*).*?'

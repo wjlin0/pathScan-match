@@ -1,5 +1,17 @@
 rules:
-  - name: "Ali-key"
+  - name: 'github-token'
+    matchers:
+      - type: regex
+        part: body
+        regex:
+          - '\b((?:ghu|ghs)_[a-zA-Z0-9]{36})\b'
+  - name: 'Azure-Key'
+    matchers:
+      - type: word
+        part: body
+        words:
+          - ''Ocp-Apim-Subscription-Key':'
+  - name: 'Ali-key'
     matchers:
       - type: regex
         part: body

@@ -1,0 +1,17 @@
+rules:
+  - name: 'PHP'
+    matchers:
+      - type: regex
+        part: header
+        name: php
+        group: 1
+        regex:
+          - '(?i)X-Powered-By: .*?(PHP[/\d\.]*).*?'
+  - name: 'Java-JSP'
+    matchers:
+      - type: regex
+        part: header
+        group: 1
+        name: jsp
+        regex:
+          - '(?i)Server: .*?(JSP[/\d\.]*).*?'

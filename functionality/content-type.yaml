@@ -1,0 +1,19 @@
+rules:
+  - name: "YAML"
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?i)Content-Type: application/yaml'
+  - name: "JSON"
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - "(?i)Content-Type: application/json"
+  - name: "XML"
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - "(?i)Content-Type: application/xml"
