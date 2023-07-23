@@ -1,5 +1,5 @@
 rules:
-  - name: 'Apisix'
+  - name: 'apisix'
     matchers:
       - type: regex
         name: apisix

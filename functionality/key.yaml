@@ -5,13 +5,13 @@ rules:
         part: body
         regex:
           - '\b((?:ghu|ghs)_[a-zA-Z0-9]{36})\b'
-  - name: 'Azure-Key'
+  - name: 'azure-key'
     matchers:
       - type: word
         part: body
         words:
           - ''Ocp-Apim-Subscription-Key':'
-  - name: 'Ali-key'
+  - name: 'ali-key'
     matchers:
       - type: regex
         part: body

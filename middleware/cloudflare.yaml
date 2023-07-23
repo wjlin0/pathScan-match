@@ -6,4 +6,4 @@ rules:
         name: cloudflare
         group: 1
         regex:
-          - '(?i)Server: .*?(cloudflare[/\d\.]*).*?'
+          - '(?i)Server: .*?(cloudflare[\S]*).*?'

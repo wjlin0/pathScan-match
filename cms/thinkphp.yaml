@@ -1,7 +1,21 @@
 rules:
   - name: 'Thinkphp'
     matchers:
-      - type: word
+      - type: regex
         part: header
-        word:
-          - 'ThinkPHP'
+        name: "thinkphp"
+        group: 1
+        regex:
+          - 'X-Powered-By: .*?(ThinkPHP[\S]*).*?'
+      - type: regex
+        part: body
+        regex:
+          - 'ThinkPHP\s*</a>\s*<sup>[\d\.]+</sup>+?'
+          - '页面错误.请稍后再试～'
+        condition: and
+  - name: 'ThinkPHP-5.x'
+    matchers:
+      - type: regex
+        part: body
+        regex:
+          - ' <a title="官方网站" href="http://www.thinkphp.cn">ThinkPHP</a>\s*<span>([ \w\.]+)</span>'

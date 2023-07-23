@@ -1,9 +1,16 @@
 rules:
-  - name: 'WordPress'
+  - name: 'wordpress'
     matchers:
       - type: regex
-        part: body
+        part: all
         name: wordpress
         group: 1
         regex:
           - '<meta name="generator" content="(WordPress (\d+\.\d+\.\d+))"'
+          - '(!i)X-Redirect-By: (WordPress)'
+  - name: 'wordpress'
+    matchers:
+      - type: regex
+        part: body
+        regex:
+          - 'href="https?://[^/s"]*\/([wp-includes|wp-content])"'

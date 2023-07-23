@@ -44,7 +44,7 @@ rules:
         part: header
         words:
           - 'Content-Type: application/xml'
-  - name: 'NoSuchBucket'
+  - name: 'no-such-bucket'
     matchers-condition: and
     matchers:
       - type: regex

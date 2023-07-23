@@ -1,5 +1,5 @@
 rules:
-  - name: 'PHP'
+  - name: 'php'
     matchers:
       - type: regex
         part: header
@@ -7,7 +7,9 @@ rules:
         group: 1
         regex:
           - '(?i)X-Powered-By: .*?(PHP[/\d\.]*).*?'
-  - name: 'Java-JSP'
+          - '(?i)Server: .*?(PHP[\S]*)'
+          - '(?i)Set-Cookie: (PHP)SESSID=[\d\w]+'
+  - name: 'java-jsp'
     matchers:
       - type: regex
         part: header
@@ -15,3 +17,4 @@ rules:
         name: jsp
         regex:
           - '(?i)Server: .*?(JSP[/\d\.]*).*?'
+          - '(?i)Set-Cookie: (PHP)SESSID=[\d\w]+'

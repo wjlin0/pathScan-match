@@ -1,5 +1,5 @@
 rules:
-  - name: 'Apache'
+  - name: 'apache'
     matchers:
       - type: regex
         part: header
@@ -7,7 +7,14 @@ rules:
         regex:
           - '(?i)Server: .*?(apache[/\d\.]*).*?'
         group: 1
-  - name: 'Nginx'
+  - name: 'apache-coyote'
+    matchers:
+      - type: regex
+        part: header
+        name: coyote
+        regex:
+          - '(?i)Server: .*?(Apache-Coyote[/\d\.]*).*?'
+  - name: 'nginx'
     matchers:
       - type: regex
         name: nginx
@@ -15,7 +22,7 @@ rules:
         regex:
           - '(?i)Server: .*?(nginx[/\d\.]*).*?'
         group: 1
-  - name: 'Tomcat'
+  - name: 'tomcat'
     matchers:
       - type: regex
         name: tomcat
@@ -31,4 +38,36 @@ rules:
         group: 1
         regex:
           - '(?i)Server: .*?(Microsoft-IIS[/\d\.]*)'
-          - 'Server: .*?(Microsoft-HTTPAPI[/\d\.]*).*?'
+          - '(?i)Server: .*?(Microsoft-HTTPAPI[/\d\.]*).*?'
+  - name: 'OpenSSL'
+    matchers:
+      - type: regex
+        name: openssl
+        part: header
+        group: 1
+        regex:
+          - '(?i)Server: .*?(OpenSSL[\S]*).*?'
+  - name: 'Openresty'
+    matchers:
+      - type: regex
+        name: Openresty
+        part: header
+        group: 1
+        regex:
+          - '(?i)Server: .*?(Openresty[\S]*).*?'
+  - name: 'mod_fcgid'
+    matchers:
+      - type: regex
+        name: mod
+        part: header
+        group: 1
+        regex:
+          - '(?i)Server: .*?(mod_fcgid[\S]*).*?'
+  - name: 'netlify'
+    matchers:
+      - type: regex
+        name: netlify
+        part: header
+        group: 1
+        regex:
+          - '(?i)Server: .*?(netlify[\S]*).*?'
