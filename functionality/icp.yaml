@@ -1,0 +1,9 @@
+rules:
+  - name: 'icp-code'
+    matchers:
+      - type: regex
+        part: body
+        name: icp
+        group: 1
+        regex:
+          - 'https?://w{0,3}\.?beian\.miit\.gov\.cn[\s\S]+?(\S ?ICP ?[备|证] ?\d{0,10} ?号[-\d]*)\s*'
