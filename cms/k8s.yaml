@@ -1,0 +1,9 @@
+rules:
+  - name: "k8s-dashboard"
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '<title>Kubernetes Dashboard</title>'
+          - '<link rel="icon" type="image/png" href="assets/images/kubernetes-logo.png">'
+        condition: and

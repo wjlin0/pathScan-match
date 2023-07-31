@@ -1,0 +1,31 @@
+rules:
+  - name: "Atlassian"
+    matchers:
+      - type: regex
+        part: body
+        group: 1
+        name: jira
+        alias: true
+        regex:
+          - '<span id="footer-build-information">\(([v\d\.]+)'
+      - type: regex
+        part: body
+        group: 1
+        name: confluence
+        alias: true
+        regex:
+          - 'https?://www\.atlassian\.com/software/confluence.*/a>\s*<span.*>([\.\d]+)</span>'
+      - type: regex
+        part: body
+        group: 1
+        name: fisheye
+        alias: true
+        regex:
+          - 'https?://www\.atlassian\.com/software/crucible/">Crucible code review</a>\s*\.\s*\(Version:([\.\d]+)\s+Build:\d+'
+      - type: regex
+        part: body
+        group: 1
+        name: crowd
+        alias: true
+        regex:
+          - 'Version:[\s\S]*?([\d\.]+)\s*\(Build:'
