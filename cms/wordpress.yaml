@@ -13,4 +13,4 @@ rules:
       - type: regex
         part: body
         regex:
-          - 'href="https?://[^/s"]*\/([wp-includes|wp-content])"'
+          - 'href="https?://[^/s"]*\/([wp\-includes|wp\-content])"'

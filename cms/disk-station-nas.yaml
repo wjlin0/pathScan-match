@@ -1,0 +1,9 @@
+rules:
+  - name: "群晖NAS管理系统"
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '<meta name="description" content="DiskStation'
+          - '<link rel="stylesheet" type="text/css" href="synoSDSjslib/sds.css'
+        condition: and

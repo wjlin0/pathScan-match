@@ -12,6 +12,7 @@ rules:
       - type: regex
         part: header
         name: coyote
+        group: 1
         regex:
           - '(?i)Server: .*?(Apache-Coyote[/\d\.]*).*?'
   - name: 'nginx'

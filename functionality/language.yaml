@@ -9,6 +9,22 @@ rules:
           - '(?i)X-Powered-By: .*?(PHP[/\d\.]*).*?'
           - '(?i)Server: .*?(PHP[\S]*)'
           - '(?i)Set-Cookie: (PHP)SESSID=[\d\w]+'
+  - name: 'python'
+    matchers:
+      - type: regex
+        part: header
+        group: 1
+        name: python
+        regex:
+          - '(?i)Server: .*?(Python[/\d\.]*).*?'
+  - name: 'simple-http'
+    matchers:
+      - type: regex
+        part: header
+        group: 1
+        name: simple
+        regex:
+          - '(?i)Server: .*?(SimpleHTTP[/\d\.]*).*?'
   - name: 'java-jsp'
     matchers:
       - type: regex

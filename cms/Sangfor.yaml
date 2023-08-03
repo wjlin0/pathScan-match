@@ -1,0 +1,8 @@
+rules:
+  - name: "深信服员工上网管理"
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'location.href = "./ui/tenant.php";'
+        condition: and
