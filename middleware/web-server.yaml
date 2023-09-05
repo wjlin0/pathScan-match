@@ -72,3 +72,12 @@ rules:
         group: 1
         regex:
           - '(?i)Server: .*?(netlify[\S]*).*?'
+  - name: 'python-wsgi-gunicorn'
+    matchers:
+      - type: regex
+        part: header
+        name: python-wsgi-gunicorn
+        alias: true
+        regex:
+          - '(?i)Server: .*?gunicorn/?([\d\.]*)'
+        group: 1

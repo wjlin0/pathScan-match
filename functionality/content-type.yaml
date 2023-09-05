@@ -10,10 +10,10 @@ rules:
       - type: regex
         part: header
         regex:
-          - "(?i)Content-Type: .*?application/[\w\+]*json.*?"
+          - '(?i)Content-Type: .*?application/[\w\+]*json.*?'
   - name: "xml"
     matchers:
       - type: regex
         part: header
         regex:
-          - "(?i)Content-Type: .*?application/[\w\+]*xml.*?"
+          - '(?i)Content-Type: .*?application/[\w\+]*xml.*?'

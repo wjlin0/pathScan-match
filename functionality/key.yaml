@@ -10,7 +10,7 @@ rules:
       - type: word
         part: body
         words:
-          - ''Ocp-Apim-Subscription-Key':'
+          - 'Ocp-Apim-Subscription-Key:'
   - name: 'ali-key'
     matchers:
       - type: regex
