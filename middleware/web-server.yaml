@@ -31,6 +31,12 @@ rules:
         regex:
           - '(?i)(tomcat[/\d\.]+)'
         group: 1
+      - type: hash
+        name: Tomcat
+        hash-method: sha256
+        hash:
+          - "45851f32c4d567082e9f6b7a2e45024ef8ab12399868772c6463cfb43ec3d968"
+          - "268d4216271ddf868149da9db7a9ee471be091b11853a2a394f8478960149c9a"
   - name: 'Microsoft-IIS'
     matchers:
       - type: regex

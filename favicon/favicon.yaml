@@ -1,0 +1,100 @@
+rules:
+  - name: 'baidu-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - 'c70088079fe9441a726c66ce0e73ae38315ec80051d3dd542c41b82fa0a1993a'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - '445a5aabf87f8dd331705295fa1e06ca'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - '9b510ed532f5c1317da881bd438e4bbbdc8ddaad'
+  - name: 'google-ico'
+    matchers:
+      - type: hash
+        part: body
+        hash-method: "sha256"
+        hash:
+          - '6da5620880159634213e197fafca1dde0272153be3e4590818533fab8d040770'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - 'f3418a443e7d841097c714d69ec4bcb8'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - '49263695f6b0cdd72f45cf1b775e660fdc36c606'
+  - name: 'spring-boot-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - 'a3fe67e3549fdbc5819762b43c7efd93b1caea734f87a33c909a4e4b2ba4e32b'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - '0488faca4c19046b94d07c3ee83cf9d6'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - '02fb8c5e4c3d113f310651a4d021aecc68f79d54'
+  - name: 'thinkphp-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - '50ee6523a4cba10377554c53f88bcd8b53cb5d11a03439f04f73aff55e982e86'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - 'f49c4a4bde1eec6c0b80c2277c76e3db'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - 'df34f60a4001bdcb8c2ab15cd50c92feb6288a31'
+  - name: 'tomcat-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - '64a3170a912786e9eece7e347b58f36471cb9d0bc790697b216c61050e6b1f08'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - '4644f2d45601037b8423d45e13194c93'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - 'dcfdc7b05cb629f3b91a7267c7f304306f461724'
+  - name: 'wordpress-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - '6bdb369337ac2496761c6f063bffea0aa6a91d4662279c399071a468251f51f0'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - '000bf649cc8f6bf27cfb04d1bcdcd3c7'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - 'd73d2f6d74ec6cdcbae07955592962e77d8ae814'
+  - name: 'fofa-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - '2b5919ca4044eb57694ccfadefc50e76d18bc312053b671b6529be43c99d3aed'
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - '69a9a8e3da75bf98fc832c0adc383013'
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - '0fd93e18373a89b6fc495868ad3335dc5d74c613'
