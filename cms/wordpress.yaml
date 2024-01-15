@@ -7,8 +7,8 @@ rules:
         group: 1
         regex:
           - '<meta name="generator" content="(WordPress (\d+\.\d+\.\d+))"'
-          - '(!i)X-Redirect-By: (WordPress)'
-          - '(!i)Location: https?:\/\/.*?\/wp-includes\/images\/w-logo-blue-white-bg\.png'
+          - '(?i)X-Redirect-By: (WordPress)'
+          - '(?i)Location: https?:\/\/.*?\/wp-includes\/images\/w-logo-blue-white-bg\.png'
       - type: regex
         part: body
         regex:
