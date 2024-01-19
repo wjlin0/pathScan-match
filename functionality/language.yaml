@@ -33,4 +33,10 @@ rules:
         name: jsp
         regex:
           - '(?i)Server: .*?(JSP[/\d\.]*).*?'
-          - '(?i)Set-Cookie: (PHP)SESSID=[\d\w]+'
+          - '(?i)Set-Cookie: (J)SESSID=[\d\w]+'
+  - name: 'asp.net'
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?i)X-Powered-By: ASP\.NET'
