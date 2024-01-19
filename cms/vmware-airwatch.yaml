@@ -1,0 +1,23 @@
+rules:
+  - name: "vmware-airwatch"
+    matchers:  # allow 302
+      - type: word
+        part: body
+        words:
+          - '/AirWatch/bundles/LoginJs'
+          - '/AirWatch/Login/Login/Login-User'
+  - name: 'vmware-airwatch'  # not allow 302
+    matchers-condition: and
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?i)Location: https?://.+/AirWatch/default.aspx'
+      - type: status
+        status:
+          - 302
+      - type: word
+        part: body
+        words:
+          - 'Object moved'
+          - '/AirWatch/default.aspx'

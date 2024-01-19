@@ -98,3 +98,32 @@ rules:
         hash-method: 'sha1'
         hash:
           - '0fd93e18373a89b6fc495868ad3335dc5d74c613'
+  - name: 'vue.js-ico'
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - "db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445"
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - "1ba2ae710d927f13d483fd5d1e548c9b"
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - 'c0605efed936ee2600284e6480521d06fa64f872'
+  - name: 'airwatch-ico'
+    hash-method: "sha256"
+    matchers:
+      - type: hash
+        hash-method: "sha256"
+        hash:
+          - "5d7e06a6e26b1bf891e8b0490f0fd0d773ec7297de995560be0dcb59e3b571c6"
+      - type: hash
+        hash-method: 'md5'
+        hash:
+          - "3e7f8aa6768bba07751fe8570d7a244c"
+      - type: hash
+        hash-method: 'sha1'
+        hash:
+          - "3a1c11d6c5cc35b18578e695ea75698e071e55b6"

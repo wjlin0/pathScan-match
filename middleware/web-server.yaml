@@ -87,3 +87,9 @@ rules:
         regex:
           - '(?i)Server: .*?gunicorn/?([\d\.]*)'
         group: 1
+  - name: 'tengine'
+    matchers:
+      - type: regex
+        part: header
+        regex:
+          - '(?i)Server: .*?Tengine.*?'
