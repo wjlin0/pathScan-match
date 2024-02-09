@@ -1,0 +1,12 @@
+name: mod_fcgid
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  name: mod
+  part: header
+  group: 1
+  regex:
+  - '(?i)Server: .*?(mod_fcgid[\S]*).*?'

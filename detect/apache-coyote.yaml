@@ -1,0 +1,12 @@
+name: apache-coyote
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: coyote
+  group: 1
+  regex:
+  - '(?i)Server: .*?(Apache-Coyote[/\d\.]*).*?'

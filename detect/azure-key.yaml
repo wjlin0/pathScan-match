@@ -1,0 +1,10 @@
+name: azure-key
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - 'Ocp-Apim-Subscription-Key:'

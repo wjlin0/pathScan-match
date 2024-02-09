@@ -1,0 +1,12 @@
+name: apache
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: Apache
+  regex:
+  - '(?i)Server: .*?(apache[/\d\.]*).*?'
+  group: 1

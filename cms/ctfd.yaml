@@ -1,8 +1,0 @@
-rules:
-  - name: "ctfd"
-    matchers:
-      - type: regex
-        part: body
-        regex:
-          - <small class=(?:['"]{1}.*)> ?Powered by CTFd ?</small>
-  

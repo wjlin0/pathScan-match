@@ -1,0 +1,12 @@
+name: simple-http
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  group: 1
+  name: simple
+  regex:
+  - '(?i)Server: .*?(SimpleHTTP[/\d\.]*).*?'

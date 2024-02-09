@@ -1,0 +1,18 @@
+name: fofa-ico
+request:
+- method: GET
+  path:
+  - /favicon.ico
+matchers:
+- type: hash
+  hash-method: sha256
+  hash:
+  - 2b5919ca4044eb57694ccfadefc50e76d18bc312053b671b6529be43c99d3aed
+- type: hash
+  hash-method: md5
+  hash:
+  - 69a9a8e3da75bf98fc832c0adc383013
+- type: hash
+  hash-method: sha1
+  hash:
+  - 0fd93e18373a89b6fc495868ad3335dc5d74c613

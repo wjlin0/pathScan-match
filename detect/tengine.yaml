@@ -1,0 +1,10 @@
+name: tengine
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  regex:
+  - '(?i)Server: .*?Tengine.*?'

@@ -1,0 +1,12 @@
+name: OpenSSL
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  name: openssl
+  part: header
+  group: 1
+  regex:
+  - '(?i)Server: .*?(OpenSSL[\S]*).*?'

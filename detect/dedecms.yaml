@@ -1,0 +1,13 @@
+name: DedeCMS
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - <strong>DedeCMS</strong>
+  - <a href="http://www.dedecms.com"
+  - <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
+  condition: or

@@ -1,0 +1,12 @@
+name: aliyun-oss
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: aliyun
+  group: 1
+  regex:
+  - '(?i)Server: .*?(AliyunOSS[/\d\.]*).*?'

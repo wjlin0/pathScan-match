@@ -1,0 +1,14 @@
+name: jenkins
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  group: 1
+  name: jenkins
+  alias: true
+  regex:
+  - 'X-Jenkins: ([\d\.]+)'
+  condition: or

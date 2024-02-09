@@ -1,0 +1,12 @@
+name: nginx
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  name: nginx
+  part: header
+  regex:
+  - '(?i)Server: .*?(nginx[/\d\.]*).*?'
+  group: 1

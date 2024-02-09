@@ -1,0 +1,14 @@
+name: php
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: php
+  group: 1
+  regex:
+  - '(?i)X-Powered-By: .*?(PHP[/\d\.]*).*?'
+  - '(?i)Server: .*?(PHP[\S]*)'
+  - '(?i)Set-Cookie: (PHP)SESSID=[\d\w]+'

@@ -1,0 +1,10 @@
+name: default-apache2-page
+request:
+  - method: GET
+    path:
+      - /
+matchers:
+  - type: word
+    words:
+      - "<title>Apache2 Debian Default Page: It works</title>"
+    part: body

@@ -1,7 +1,0 @@
-rules:
-  - name: "tencent-mail"
-    matchers:
-      - type: regex
-        part: body
-        regex:
-          - '<link rel="stylesheet" type="text/css" href="https?://rescdn\.qqmail\.com/bizmail'

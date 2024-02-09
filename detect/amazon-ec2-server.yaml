@@ -1,0 +1,12 @@
+name: Amazon EC2 Server
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: Apache
+  regex:
+  - '(?i)Server: .*?(EC2ws).*?'
+  group: 1

@@ -1,7 +1,0 @@
-rules:
-  - name: "Nacos"
-    matchers:
-      - type: word
-        part: body
-        words:
-          - '<img class="product-logo" src="img/nacos.png">'

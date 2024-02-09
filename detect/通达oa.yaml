@@ -1,0 +1,10 @@
+name: 通达OA
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: body
+  regex:
+  - <link rel="shortcut icon" href="/static/images/tongda.ico" />

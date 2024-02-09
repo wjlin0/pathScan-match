@@ -1,9 +1,0 @@
-rules:
-  - name: 'Amazon EC2 Server'
-    matchers:
-      - type: regex
-        part: header
-        name: Apache
-        regex:
-          - '(?i)Server: .*?(EC2ws).*?'
-        group: 1

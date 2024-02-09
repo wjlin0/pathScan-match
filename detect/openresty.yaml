@@ -1,0 +1,12 @@
+name: Openresty
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  name: Openresty
+  part: header
+  group: 1
+  regex:
+  - '(?i)Server: .*?(Openresty[\S]*).*?'

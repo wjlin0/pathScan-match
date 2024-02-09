@@ -1,0 +1,12 @@
+name: JumpServer开源堡垒机
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - 欢迎使用JumpServer开源堡垒机
+  - 全球首款完全开源的堡垒机，使用GNU GPL v2.0开源协议，是符合 4A 的专业运维审计系统。
+  condition: and

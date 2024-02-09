@@ -1,0 +1,21 @@
+name: spring-boot-jolokia
+request:
+  - method: GET
+    path:
+      - /actuator/jolokia
+      - /jolokia
+      - /actuator;..%252f..%252f/jolokia
+stop-at-first-match: true
+matchers:
+  - type: word
+    part: body
+    words:
+      - '"value"'
+      - '"details"'
+      - '"protocol"'
+      - '"details"'
+      - '"agent_version"'
+      - '"agent_id"'
+      - '"version"'
+      - '"request"'
+    condition: and

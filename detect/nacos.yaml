@@ -1,0 +1,10 @@
+name: Nacos
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - <img class="product-logo" src="img/nacos.png">

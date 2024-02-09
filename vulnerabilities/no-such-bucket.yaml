@@ -1,0 +1,10 @@
+name: no-such-bucket
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: body
+  regex:
+  - <Code>NoSuchBucket</Code>

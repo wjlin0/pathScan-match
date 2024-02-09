@@ -1,0 +1,13 @@
+name: jenkins-ssh
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  group: 1
+  name: jenkins-ssh
+  alias: true
+  regex:
+  - 'X-Ssh-Endpoint: ([a-zA-Z0-9.-]+\.[a-zA-Z]{2,}[:\d]{0,6})'

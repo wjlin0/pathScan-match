@@ -1,0 +1,17 @@
+name: oss
+request:
+- method: GET
+  path:
+  - /
+matchers-condition: and
+matchers:
+- type: regex
+  part: body
+  regex:
+  - <Code>.*?</Code>
+  - <RequestId>.*?</RequestId>
+  condition: and
+- type: word
+  part: header
+  words:
+  - 'Content-Type: application/xml'

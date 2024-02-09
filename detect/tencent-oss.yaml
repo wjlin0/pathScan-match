@@ -1,0 +1,12 @@
+name: tencent-oss
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: tencent
+  group: 1
+  regex:
+  - '(?i)Server: .*?(tencent-cos[/\d\.]*).*?'

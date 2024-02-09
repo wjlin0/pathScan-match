@@ -1,0 +1,13 @@
+name: python-wsgi-gunicorn
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: python-wsgi-gunicorn
+  alias: true
+  regex:
+  - '(?i)Server: .*?gunicorn/?([\d\.]*)'
+  group: 1

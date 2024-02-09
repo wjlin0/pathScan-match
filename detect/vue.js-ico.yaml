@@ -1,0 +1,18 @@
+name: vue.js-ico
+request:
+- method: GET
+  path:
+  - /favicon.ico
+matchers:
+- type: hash
+  hash-method: sha256
+  hash:
+  - db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445
+- type: hash
+  hash-method: md5
+  hash:
+  - 1ba2ae710d927f13d483fd5d1e548c9b
+- type: hash
+  hash-method: sha1
+  hash:
+  - c0605efed936ee2600284e6480521d06fa64f872

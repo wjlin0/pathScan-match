@@ -1,0 +1,10 @@
+name: 泛微OA
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  regex:
+  - 'Set-Cookie: ecology_JSessionid'

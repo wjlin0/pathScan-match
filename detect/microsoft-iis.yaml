@@ -1,0 +1,13 @@
+name: Microsoft-IIS
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: iis
+  group: 1
+  regex:
+  - '(?i)Server: .*?(Microsoft-IIS[/\d\.]*)'
+  - '(?i)Server: .*?(Microsoft-HTTPAPI[/\d\.]*).*?'

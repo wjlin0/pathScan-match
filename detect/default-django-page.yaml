@@ -1,0 +1,10 @@
+name: default-django-page
+request:
+  - method: GET
+    path:
+      - /
+matchers:
+  - type: word
+    words:
+      - "<title>The install worked successfully! Congratulations!</title>"
+    part: body

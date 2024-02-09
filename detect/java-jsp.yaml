@@ -1,0 +1,13 @@
+name: java-jsp
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  group: 1
+  name: jsp
+  regex:
+  - '(?i)Server: .*?(JSP[/\d\.]*).*?'
+  - '(?i)Set-Cookie: (J)SESSID=[\d\w]+'

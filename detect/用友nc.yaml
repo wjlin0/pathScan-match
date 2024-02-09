@@ -1,0 +1,11 @@
+name: 用友NC
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - <meta http-equiv=refresh content=0;url=index.jsp>
+  condition: and

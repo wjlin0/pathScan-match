@@ -1,0 +1,10 @@
+name: head-xss
+request:
+  - method: HEAD
+    path:
+      - /?<script>alert(1)</script>
+matchers:
+  - type: word
+    part: body
+    words:
+      - <script>alert(1);</script>

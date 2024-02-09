@@ -1,0 +1,15 @@
+name: spring-boot-env
+request:
+  - method: GET
+    path:
+      - /actuator/env
+      - /env
+      - /actuator;..%252f..%252f/env
+stop-at-first-match: true
+matchers:
+  - type: word
+    part: body
+    words:
+      - activeProfiles
+      - propertySources
+    condition: and

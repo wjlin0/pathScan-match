@@ -1,0 +1,15 @@
+name: gitlab-detect
+request:
+  - method: GET
+    path:
+      - /users/sign_in
+matchers:
+    - type: word
+      part: body
+      words:
+      - '/assets/gitlab_logo'
+      - 'About GitLab'
+      - 'gl-w-full'
+      - 'gon.gitlab_logo'
+      - 'assets/gitlab_logo'
+      condition: and

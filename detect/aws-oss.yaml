@@ -1,0 +1,19 @@
+name: aws-oss
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: aws
+  group: 1
+  regex:
+  - '(?i)Server: .*?(AmazonS3[/\d\.]*).*?'
+- type: regex
+  part: header
+  name: s3
+  alias: true
+  group: 1
+  regex:
+  - '(?i)X-Amz-Bucket-Region: (.*)\r\n'

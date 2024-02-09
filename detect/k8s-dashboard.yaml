@@ -1,0 +1,12 @@
+name: k8s-dashboard
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - <title>Kubernetes Dashboard</title>
+  - <link rel="icon" type="image/png" href="assets/images/kubernetes-logo.png">
+  condition: and

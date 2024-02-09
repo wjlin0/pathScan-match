@@ -1,0 +1,20 @@
+name: gitbook-detect
+request:
+  - method: GET
+    path:
+      - /
+matchers-condition: or
+matchers:
+  - type: word
+    part: body
+    words:
+      - 'gitbook.page.hasChanged'
+      - '<meta name="generator" content="GitBook'
+    condition: and
+
+  - type: regex
+    part: body
+    regex:
+      - "<title>.*[Gg]it[bB]ook</title>"
+      - "<title>.*· [Gg]it[bB]ook.*</title>"
+    condition: or

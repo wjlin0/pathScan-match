@@ -1,0 +1,10 @@
+name: vmware-vSphere
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: word
+  part: body
+  words:
+  - <a class="link" id="on-prem-documentation-link" href="http://www.vmware.com/info?id=1414">

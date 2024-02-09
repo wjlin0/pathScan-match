@@ -1,0 +1,10 @@
+name: github-token
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: body
+  regex:
+  - \b((?:ghu|ghs)_[a-zA-Z0-9]{36})\b

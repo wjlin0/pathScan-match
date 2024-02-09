@@ -1,0 +1,10 @@
+name: tencent-mail
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: body
+  regex:
+  - <link rel="stylesheet" type="text/css" href="https?://rescdn\.qqmail\.com/bizmail

@@ -1,0 +1,10 @@
+name: yaml
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  regex:
+  - '(?i)Content-Type: .*?application/[\w\+]*yaml.*?'

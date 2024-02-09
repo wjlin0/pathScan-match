@@ -1,0 +1,14 @@
+name: spring-boot-actuator
+request:
+  - method: GET
+    path:
+      - /actuator
+matchers:
+  - type: word
+    part: body
+    words:
+      - '"_links":'
+      - '"href"'
+      - '"self"'
+      - '"health"'
+    condition: and

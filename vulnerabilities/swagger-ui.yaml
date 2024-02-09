@@ -1,0 +1,40 @@
+name: swagger-ui
+request:
+  - method: GET
+    path:
+      - "/"
+      - "/swagger-resources"
+      - "/swagger-ui.html"
+      - "/actuator/swagger-ui.html"
+      - "/api/swagger-ui.html"
+      - "/gateway/actuator/swagger-ui.html"
+      - /swagger/index.html
+      - /swagger/static/index.html
+      - /swagger/swagger-ui.html
+      - /swagger-ui/index.html
+      - /template/swagger-ui.html
+      - /user/swagger-ui.html
+      - /v2/swagger.json
+      - "/%20/swagger-ui.html"
+      - /v2/api-docs
+stop-at-first-match: true
+matchers:
+  - type: regex
+    part: body
+    regex:
+      - '"swaggerVersion":"[\d\.]+"'
+      - '"location":".*"'
+    condition: and
+  - type: regex
+    part: body
+    regex:
+      - '"swagger": ?"[\d\.]+"'
+      - '"info": ?"'
+    condition: and
+  - type: word
+    part: body
+    words:
+      - 'swagger-ui-standalone-preset.js'
+      - 'swagger-ui-bundle.js'
+      - 'swagger-ui.css'
+    condition: and

@@ -1,7 +1,0 @@
-rules:
-  - name: "ThingsBoard"
-    matchers:
-      - type: word
-        part: body
-        words:
-          - <link rel="icon" type="image/x-icon" href="thingsboard.ico">

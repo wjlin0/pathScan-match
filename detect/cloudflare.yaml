@@ -1,0 +1,12 @@
+name: cloudflare
+request:
+- method: GET
+  path:
+  - /
+matchers:
+- type: regex
+  part: header
+  name: cloudflare
+  group: 1
+  regex:
+  - '(?i)Server: .*?(cloudflare[\S]*).*?'
