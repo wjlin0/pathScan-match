@@ -1,11 +1,11 @@
-name: Openresty
+name: openresty
 request:
 - method: GET
   path:
   - /
 matchers:
 - type: regex
-  name: Openresty
+  name: openresty
   part: header
   group: 1
   regex:

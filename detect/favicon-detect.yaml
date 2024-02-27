@@ -1,0 +1,52 @@
+name: favicon-detect
+request:
+  - method: GET
+    path:
+      - /favicon.ico
+matchers:
+  - type: hash
+    hash-method: sha256
+    name: thinkphp
+    hash:
+      - 50ee6523a4cba10377554c53f88bcd8b53cb5d11a03439f04f73aff55e982e86
+  - type: hash
+    hash-method: sha256
+    name: tomcat
+    hash:
+      - 64a3170a912786e9eece7e347b58f36471cb9d0bc790697b216c61050e6b1f08
+  - type: hash
+    hash-method: sha256
+    name: fofa
+    hash:
+      - 2b5919ca4044eb57694ccfadefc50e76d18bc312053b671b6529be43c99d3aed
+  - type: hash
+    part: body
+    hash-method: sha256
+    name: google
+    hash:
+      - 6da5620880159634213e197fafca1dde0272153be3e4590818533fab8d040770
+  - type: hash
+    hash-method: sha256
+    name: spring-boot
+    hash:
+      - a3fe67e3549fdbc5819762b43c7efd93b1caea734f87a33c909a4e4b2ba4e32b
+  - type: hash
+    hash-method: sha256
+    name: vue-js
+    hash:
+      - db74ab0b78338c1f778f8398c45f4103c99aea0e845a3118a7750b4eeafd3445
+  - type: hash
+    hash-method: sha256
+    name: wordpress
+    hash:
+      - 6bdb369337ac2496761c6f063bffea0aa6a91d4662279c399071a468251f51f0
+  - type: hash
+    hash-method: sha256
+    name: airwatch
+    hash:
+      - 5d7e06a6e26b1bf891e8b0490f0fd0d773ec7297de995560be0dcb59e3b571c6
+  - type: hash
+    hash-method: sha256
+    name: baidu
+    hash:
+      - c70088079fe9441a726c66ce0e73ae38315ec80051d3dd542c41b82fa0a1993a

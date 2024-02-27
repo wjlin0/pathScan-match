@@ -1,4 +1,4 @@
-name: icp-code
+name: icp-detect
 request:
 - method: GET
   path:
