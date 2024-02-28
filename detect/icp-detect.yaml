@@ -8,11 +8,13 @@ matchers:
   part: body
   name: icp
   group: 1
+  alias: true
   regex:
   - (\S ?ICP[备|证]\d{3,10}\s?号?[-\d]*)
 - type: regex
   part: body
   name: icp
   group: 1
+  alias: true
   regex:
   - https?://w{0,3}\.?beian\.miit\.gov\.cn[\s\S]+?(\S ?ICP\s?[备|证]\s?\d{0,10}\s?号?[-\d]*)\s*

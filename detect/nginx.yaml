@@ -7,6 +7,7 @@ matchers:
 - type: regex
   name: nginx
   part: header
+  alias: true
   regex:
-  - '(?i)Server: .*?(nginx[/\d\.]*).*?'
+  - '(?i)Server: .*?nginx/?([\d\.]*).*?'
   group: 1

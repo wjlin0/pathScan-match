@@ -1,4 +1,4 @@
-name: 通达OA
+name: tongda-oa
 request:
 - method: GET
   path:

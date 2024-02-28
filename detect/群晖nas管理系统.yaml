@@ -1,4 +1,4 @@
-name: 群晖NAS管理系统
+name: qunhui-nas
 request:
 - method: GET
   path:

@@ -1,4 +1,4 @@
-name: vmware-vSphere
+name: vmware-vsphere
 request:
 - method: GET
   path:

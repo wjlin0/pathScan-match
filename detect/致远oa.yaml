@@ -1,4 +1,4 @@
-name: 致远OA
+name: zhiyuan-oa
 request:
 - method: GET
   path:

@@ -1,4 +1,4 @@
-name: 用友NC
+name: yongyou-nc
 request:
 - method: GET
   path:

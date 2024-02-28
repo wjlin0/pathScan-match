@@ -1,4 +1,4 @@
-name: 用友NC-UFIDA
+name: yongyou-nc-ufida
 request:
 - method: GET
   path:

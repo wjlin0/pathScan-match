@@ -8,6 +8,7 @@ matchers:
   part: header
   name: thinkphp
   group: 1
+  alias: true
   regex:
   - 'X-Powered-By: .*?(ThinkPHP[\S]*).*?'
 - type: regex

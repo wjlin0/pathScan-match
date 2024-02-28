@@ -1,4 +1,4 @@
-name: Nacos
+name: nacos
 request:
 - method: GET
   path:

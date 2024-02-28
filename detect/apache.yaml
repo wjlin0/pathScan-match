@@ -6,7 +6,8 @@ request:
 matchers:
 - type: regex
   part: header
-  name: Apache
+  name: apache
+  alias: true
+  group: 1
   regex:
   - '(?i)Server: .*?(apache[/\d\.]*).*?'
-  group: 1
