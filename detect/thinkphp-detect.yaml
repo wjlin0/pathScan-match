@@ -1,0 +1,14 @@
+name: thinkphp-detect
+request:
+  - method: GET
+    path:
+      - vendor/composer/installed.json
+matchers:
+  - type: regex
+    part: body
+    name: thinkphp
+    group: 1
+    alias: true
+    regex:
+      - '"name": "topthink/framework",[\s]*"version": "(.*?)"'
+    condition: and

@@ -1,4 +1,4 @@
-name: spring-boot-actuator
+name: spring-boot
 request:
   - method: GET
     path:
