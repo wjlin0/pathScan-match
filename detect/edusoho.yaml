@@ -1,0 +1,16 @@
+name: edusoho-detect
+
+request:
+  - method: GET
+    path:
+      - "/"
+
+matchers:
+  - type: regex
+    part: body
+    name: edusoho
+    group: 1
+    alias: true
+    regex:
+      - 'Powered by.*>EduSoho ([v0-9.]+)<'
+
